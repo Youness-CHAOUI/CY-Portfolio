@@ -1,1 +1,18 @@
+@import "app/shared/styles/variables";
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,300&display=swap');
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $white-1;
+}

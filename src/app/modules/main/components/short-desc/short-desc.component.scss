@@ -1,0 +1,27 @@
+@import "~src/app/shared/styles/variables";
+
+.short-desc-container {
+  .my-image {
+    height: 99.9vh;
+    background-image: url(/assets/img/me.jpg);
+    background-size: cover;
+    background-position: top;
+    //box-shadow: 2px 2px 20px #1e1d1d, -2px -2px 20px #1e1d1d;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &::after {
+      content: '';
+      width: 200px;
+      height: 120%;
+      background-color: $white-1;
+      box-shadow: 2px 2px 20px #1e1d1d, -2px -2px 20px #1e1d1d;
+      transform: rotate(10deg) translate(-110px, -30px);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

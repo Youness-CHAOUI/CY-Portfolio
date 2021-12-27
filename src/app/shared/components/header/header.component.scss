@@ -1,0 +1,17 @@
+@import "src/app/shared/styles/variables";
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: $header-height;
+  overflow: hidden;
+  background-color: $white-2;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+
+  .links {
+    display: flex;
+    align-items: center;
+  }
+}
