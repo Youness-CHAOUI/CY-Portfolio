@@ -1,9 +1,19 @@
 <div class="short-desc-container fluid-container">
   <div class="row">
-    <div class="col-7">
-      desc
+    <div class="desc col-7">
+      <h2>HEY THERE !</h2>
+      <h1>I AM <span>Youness CHAOUI</span></h1>
+      <h5 class="typewriter">A CREATIVE SOFTWARE ENGINEER</h5>
+      <div class="social-media">
+        <a *ngFor="let sm of socialMedia" [href]="sm.link">
+          <i [class]="sm.icon" [title]="sm.title"></i>
+        </a>
+      </div>
+      <button class="my-work-button btn btn-primary">
+        See my work
+      </button>
     </div>
-    <div class="my-image col-5">
+    <div class="image col-5">
       <!--      <img src="/assets/img/me.jpg" alt="Youness CHAOUI">-->
     </div>
   </div>

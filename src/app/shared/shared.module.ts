@@ -14,7 +14,7 @@ import {HeaderComponent} from "./components/header/header.component";
   exports: [
     IconLinkComponent,
     HeaderComponent
-  ]
+  ],
 })
 export class SharedModule {
 }

@@ -1,7 +1,69 @@
 @import "~src/app/shared/styles/variables";
+@import "~src/app/shared/styles/animations";
 
 .short-desc-container {
-  .my-image {
+  .desc {
+    padding-top: 20%;
+    text-transform: uppercase;
+    color: #797979;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 60px;
+      font-weight: lighter;
+
+      span {
+        //color: #05364d;
+        color: $primary;
+        font-weight: bold;
+      }
+    }
+
+    h5 {
+      margin-left: 0;
+      margin-bottom: 40px;
+    }
+
+    .social-media {
+      margin-bottom: 60px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #797979;
+
+        i {
+          cursor: pointer;
+          font-size: 21px;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+    .my-work-button {
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      letter-spacing: .5px;
+      transition: 1s;
+
+      &:hover {
+        color: $primary;
+        background-color: white;
+      }
+    }
+  }
+
+  .image {
     height: 99.9vh;
     background-image: url(/assets/img/me.jpg);
     background-size: cover;
@@ -14,14 +76,14 @@
 
     &::after {
       content: '';
-      width: 200px;
+      width: 40%;
       height: 120%;
       background-color: $white-1;
       box-shadow: 2px 2px 20px #1e1d1d, -2px -2px 20px #1e1d1d;
       transform: rotate(10deg) translate(-110px, -30px);
       position: absolute;
       top: 0;
-      left: 0;
+      left: -15px;
     }
   }
 }

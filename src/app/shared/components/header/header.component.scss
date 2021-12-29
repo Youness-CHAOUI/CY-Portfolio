@@ -2,7 +2,6 @@
 
 .header-container {
   display: flex;
-  align-items: center;
   height: $header-height;
   overflow: hidden;
   background-color: $white-2;
@@ -10,8 +9,29 @@
   position: relative;
   z-index: 100;
 
-  .links {
+  .container {
     display: flex;
     align-items: center;
+    overflow: hidden;
+    margin: 0 10%;
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .link {
+        font-weight: normal;
+        cursor: pointer;
+        //padding: 12px 20px;
+        //border-radius: 6px;
+
+        &:hover {
+          font-weight: bold;
+          color: $primary;
+          //background-color: $white-1;
+        }
+      }
+    }
   }
 }
